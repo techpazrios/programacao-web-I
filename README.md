@@ -1,17 +1,10 @@
-# Minha primeira página Web
+# Página Pessoal - Cayo Rios
 
-**Nome:** Cayo Gustavo da Paz Rios
+Projeto desenvolvido para a disciplina de **Programação Web I** (IF Sudeste MG - Barbacena).
 
-## Sobre a atividade
+## 🚀 Tecnologias Utilizadas
+- HTML5 (Semântica e Formulários)
+- CSS3 (Estilização externa, seletores, classes e pseudoclasses)
 
-Esta é minha primeira página desenvolvida na disciplina Programação Web I.
-
-## Tecnologias utilizadas
-
-- HTML
-- Git
-- GitHub
-
-## Captura de tela
-
-![Página aberta no navegador com propriedade visual alterada nas DevTools](captura-devtools.png)
+### Cartões com Grid e Flexbox
+![Cartões com Grid e Flexbox](img/captura-grid.png)

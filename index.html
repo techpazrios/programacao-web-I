@@ -3,13 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha primeira página Web</title>
+    <title>Página Pessoal - Cayo Rios</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Minha primeira página Web</h1>
+<body class="layout-grid">
 
-    <p>Seja bem-vindo(a) à minha primeira página desenvolvida na disciplina Programação Web I!</p>
+    <!-- Cabeçalho (Ocupa a largura total da grelha) -->
+    <header>
+        <h1>Cayo Rios</h1>
+        <p>Estudante de Informática para Internet e entusiasta de tecnologia.</p>
+    </header>
 
-    <p>Nome: Cayo Gustavo da Paz Rios</p>
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="https://github.com/techpazrios" target="_blank">Meu GitHub</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Apresentação -->
+        <section class="secao-card">
+            <h2>Apresentação</h2>
+            <p class="destaque">Olá! Seja bem-vindo à minha página pessoal. Meu nome é Cayo Rios. Sou uma pessoa curiosa, que gosta de aprender coisas novas e está sempre buscando novos conhecimentos. Gosto de trocar experiências, conhecer coisas diferentes e aproveitar as oportunidades que surgem para crescer.</p>
+            <img src="img/foto.jpeg" alt="Foto de perfil de Cayo Rios" class="foto-perfil">
+        </section>
+
+        <!-- Nova Seção: Tecnologias e Interesses (Cards em Grid e Flexbox) -->
+        <section id="tecnologias" class="secao-card">
+            <h2>Tecnologias e Interesses</h2>
+            <p>Tecnologias, ferramentas e áreas que estudo e tenho interesse:</p>
+
+            <div class="cards-grid">
+                <!-- Cartão 1 -->
+                <article class="card">
+                    <div class="card-header">
+                        <span class="card-icone">&lt;/&gt;</span>
+                        <h3>Desenvolvimento Web</h3>
+                    </div>
+                    <p class="card-texto">Criação de páginas e aplicações web modernas utilizando marcação semântica e boas práticas.</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </article>
+
+                <!-- Cartão 2 -->
+                <article class="card">
+                    <div class="card-header">
+                        <span class="card-icone">💻</span>
+                        <h3>Controle de Versão</h3>
+                    </div>
+                    <p class="card-texto">Gestão e versionamento de código-fonte, trabalho em equipe e publicação de projetos na nuvem.</p>
+                    <div class="card-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                </article>
+
+                <!-- Cartão 3 -->
+                <article class="card">
+                    <div class="card-header">
+                        <span class="card-icone">🗄️</span>
+                        <h3>Banco de Dados</h3>
+                    </div>
+                    <p class="card-texto">Conceitos fundamentais de modelagem, organização relacional e persistência de informações.</p>
+                    <div class="card-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Modelagem</span>
+                    </div>
+                </article>
+
+                <!-- Cartão 4 -->
+                <article class="card">
+                    <div class="card-header">
+                        <span class="card-icone">🎮</span>
+                        <h3>Interesses Pessoais</h3>
+                    </div>
+                    <p class="card-texto">Prática regular de atividade física para saúde, música para concentração e videojogos.</p>
+                    <div class="card-tags">
+                        <span class="tag">Treino</span>
+                        <span class="tag">Dança</span>
+                        <span class="tag">Jogos</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Hobbies ou Interesses Antigos -->
+        <section class="secao-card">
+            <h2>Meus Hobbies</h2>
+            <ul class="lista-hobbies">
+                <li>Jogar videogame;</li>
+                <li>Ouvir música e podcast;</li>
+                <li>Treinar e Dançar.</li>
+            </ul>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contato" class="secao-card">
+            <h2>Entre em contato</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Envie uma mensagem</legend>
+
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required placeholder="Motivo do contato">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <div class="botoes">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Página desenvolvida por Cayo Rios</p>
+        <p><a href="https://www.instagram.com/cayogustavo/" target="_blank">Meu Perfil Pessoal</a></p>
+    </footer>
+
 </body>
 </html>
