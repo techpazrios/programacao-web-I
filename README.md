@@ -7,4 +7,4 @@ Projeto desenvolvido para a disciplina de **Programação Web I** (IF Sudeste MG
 - CSS3 (Estilização externa, seletores, classes e pseudoclasses)
 
 ## Design Responsivo (Visualização Mobile)
-![Página Responsiva no Smartphone](captura-responsivo.png)
+![Página Responsiva no Smartphone](img/captura-responsivo.png)
