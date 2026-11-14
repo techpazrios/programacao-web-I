@@ -6,5 +6,5 @@ Projeto desenvolvido para a disciplina de **Programação Web I** (IF Sudeste MG
 - HTML5 (Semântica e Formulários)
 - CSS3 (Estilização externa, seletores, classes e pseudoclasses)
 
-### Cartões com Grid e Flexbox
-![Cartões com Grid e Flexbox](img/captura-grid.png)
+## Design Responsivo (Visualização Mobile)
+![Página Responsiva no Smartphone](captura-responsivo.png)
